@@ -19,3 +19,32 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+
+.rectSelectWrapper .css-13cymwt-control,
+.rectSelectWrapper .css-t3ipsp-control {
+  padding: 4px 14px;
+  border: 1px solid transparent;
+  width: 100%;
+  line-height: 1.25;
+  color: #8e97a6;
+  appearance: none;
+  min-height: 48px;
+  border-radius: 18px;
+}
+.rectSelectWrapper .css-qbdosj-Input,
+.rectSelectWrapper .css-1dimb5e-singleValue {
+  color: #8e97a6;
+}
+.rectSelectWrapper .css-13cymwt-control:hover,
+.rectSelectWrapper .css-t3ipsp-control:hover,
+.rectSelectWrapper .css-t3ipsp-control:focus {
+  border: 1px solid #001b44;
+}
+
+.rectSelectWrapper .css-1u9des2-indicatorSeparator {
+  display: none;
+}
+.filterWrapper .css-13cymwt-control {
+  display: none;
+}

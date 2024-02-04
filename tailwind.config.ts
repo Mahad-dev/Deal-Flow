@@ -15,7 +15,9 @@ const config: Config = {
       },
     },
     colors: {
-      light: "#F5F6F8"
+      light: "#F5F6F8",
+      gray: "#c8c6ca",
+      dark: "#120713",
       // Configure your color palette here
     }
   },
