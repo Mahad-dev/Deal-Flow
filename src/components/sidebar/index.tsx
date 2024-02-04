@@ -20,7 +20,7 @@ const navLinks = [
         id: 3,
         name: "Pay",
         icon: <Minus />,
-        href: ""
+        href: "pay"
 
     },
     {
