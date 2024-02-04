@@ -8,13 +8,13 @@ const navLinks = [
         id: 1,
         name: "Dealflow",
         icon: <DealFlow />,
-        href: ""
+        href: "/"
     },
     {
         id: 2,
         name: "Invoice",
         icon: <Plus />,
-        href: ""
+        href: "invoice"
     },
     {
         id: 3,
