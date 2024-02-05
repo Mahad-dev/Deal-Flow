@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <div className={`grid grid-cols-[240px_1fr] h-screen ${inter.className}`}>
       <Sidebar />
-      <main>{children}</main>
+      <main className='h-full overflow-auto'>{children}</main>
     </div>
   )
 }
