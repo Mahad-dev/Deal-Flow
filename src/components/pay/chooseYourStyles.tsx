@@ -13,14 +13,17 @@ interface AddImageProps {
 interface Props {
   selectedColor: string;
   handleColorChange: any;
+  selectedImg: string;
+  selectedImage: any;
 }
 
 export default function ChooseYourStyles({
   selectedColor,
   handleColorChange,
+  selectedImg,
+  selectedImage,
 }: Props) {
   const [selectedImages, setSelectedImages] = useState<string[]>([]);
-  const [selectedImg, setSelectedImg] = useState<string>("");
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files) {
@@ -29,9 +32,6 @@ export default function ChooseYourStyles({
       );
       setSelectedImages((prevImages) => [...prevImages, ...newImages]);
     }
-  };
-  const selectedImage = (img: string) => {
-    setSelectedImg(img);
   };
 
   return (

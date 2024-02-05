@@ -4,10 +4,13 @@ import { useState } from "react";
 
 export default function Pay() {
   const [selectedColor, setSelectedColor] = useState("#D173D2");
+  const [selectedImg, setSelectedImg] = useState<string>("");
 
   const handleColorChange = (color: any) => {
-    console.log(color);
     setSelectedColor(color.hex);
+  };
+  const selectedImage = (img: string) => {
+    setSelectedImg(img);
   };
   return (
     <div>
@@ -15,8 +18,10 @@ export default function Pay() {
         <ChooseYourStyles
           selectedColor={selectedColor}
           handleColorChange={handleColorChange}
+          selectedImage={selectedImage}
+          selectedImg={selectedImg}
         />
-        <InvoiceForm selectedColor={selectedColor} />
+        <InvoiceForm selectedImg={selectedImg} selectedColor={selectedColor} />
       </div>
     </div>
   );

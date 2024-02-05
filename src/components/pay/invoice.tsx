@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import tinycolor from "tinycolor2";
 
 export default function InvoiceForm({
   selectedColor,
+  selectedImg
 }: {
   selectedColor: string;
+  selectedImg: string;
 }) {
-  const [DarkColor, setDarkColor] = useState("#54235a");
-
+  const [DarkColor, setDarkColor] = useState(selectedColor);
+  useEffect(() => {
+    // Calculate a slightly darker version of selectedColor
+    const darkerColor = tinycolor(selectedColor).darken(35).toString();
+    setDarkColor(darkerColor);
+  }, [selectedColor]);
   return (
     <div className="bg-[#fff] px-[2rem] py-[1rem] rounded-[20px] shadow-sm">
       <div className="px-[3rem] py-[1.5rem] rounded-[20px] overflow-hidden relative">
@@ -20,8 +27,8 @@ export default function InvoiceForm({
             <div className="absolute top-5">
               {" "}
               <img
-                src="../Profile.png"
-                className="w-[4rem] h-[4rem]"
+                src={selectedImg || "/Profile.png"}
+                className="w-[4rem] h-[4rem] rounded-full object-cover"
                 alt=""
               />{" "}
             </div>
