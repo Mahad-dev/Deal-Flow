@@ -387,6 +387,7 @@ export const RoundedRightArrow: React.FC<IconProps> = ({ className }) => {
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect width="32" height="32" rx="12" fill="#647084" fill-opacity="0.04" />
       <path
@@ -417,3 +418,319 @@ export function AddPlus() {
     </svg>
   );
 }
+
+export const CorrectTick: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z"
+        fill="#120713"
+      />
+    </svg>
+  );
+};
+
+export const RoundedPlus: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <g filter="url(#filter0_b_2069_1954)">
+        <rect width="48" height="48" rx="20" fill="white" fill-opacity="0.2" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M24.6251 18.1667C24.6251 17.8215 24.3453 17.5417 24.0001 17.5417C23.6549 17.5417 23.3751 17.8215 23.3751 18.1667V23.375H18.1667C17.8216 23.375 17.5417 23.6548 17.5417 24C17.5417 24.3452 17.8216 24.625 18.1667 24.625H23.3751V29.8333C23.3751 30.1785 23.6549 30.4583 24.0001 30.4583C24.3453 30.4583 24.6251 30.1785 24.6251 29.8333V24.625H29.8334C30.1786 24.625 30.4584 24.3452 30.4584 24C30.4584 23.6548 30.1786 23.375 29.8334 23.375H24.6251V18.1667Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_2069_1954"
+          x="-40"
+          y="-40"
+          width="128"
+          height="128"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_2069_1954"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_2069_1954"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+};
+
+export const RoundedWithDraw: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <g filter="url(#filter0_b_2069_3247)">
+        <rect width="48" height="48" rx="20" fill="white" fill-opacity="0.4" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M26.7392 16.7558C26.6655 16.7252 26.5847 16.7083 26.4999 16.7083C26.4152 16.7083 26.3344 16.7252 26.2607 16.7558C26.187 16.7863 26.1179 16.8315 26.058 16.8914L21.8913 21.0581C21.6472 21.3021 21.6472 21.6979 21.8913 21.9419C22.1354 22.186 22.5311 22.186 22.7752 21.9419L25.8749 18.8422V22.3333V27.3333C25.8749 28.0516 25.5896 28.7405 25.0817 29.2484C24.5738 29.7563 23.8849 30.0417 23.1666 30.0417H17.3333C16.9881 30.0417 16.7083 30.3215 16.7083 30.6667C16.7083 31.0118 16.9881 31.2917 17.3333 31.2917H23.1666C24.2164 31.2917 25.2232 30.8746 25.9655 30.1323C26.7079 29.39 27.1249 28.3831 27.1249 27.3333V22.3333V18.8422L30.2246 21.9419C30.4687 22.186 30.8645 22.186 31.1085 21.9419C31.3526 21.6979 31.3526 21.3021 31.1085 21.0581L26.9419 16.8914C26.8819 16.8315 26.8129 16.7863 26.7392 16.7558Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_2069_3247"
+          x="-40"
+          y="-40"
+          width="128"
+          height="128"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_2069_3247"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_2069_3247"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+};
+
+export const MoreItemsDots: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_b_2069_2036)">
+        <rect width="48" height="48" rx="20" fill="white" fill-opacity="0.2" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17.9583 24C17.9583 23.8849 18.0515 23.7917 18.1666 23.7917C18.2816 23.7917 18.3749 23.8849 18.3749 24C18.3749 24.1151 18.2816 24.2083 18.1666 24.2083C18.0515 24.2083 17.9583 24.1151 17.9583 24ZM18.1666 22.5417C17.3612 22.5417 16.7083 23.1946 16.7083 24C16.7083 24.8054 17.3612 25.4583 18.1666 25.4583C18.972 25.4583 19.6249 24.8054 19.6249 24C19.6249 23.1946 18.972 22.5417 18.1666 22.5417ZM23.9999 23.7917C23.8849 23.7917 23.7916 23.8849 23.7916 24C23.7916 24.1151 23.8849 24.2083 23.9999 24.2083C24.115 24.2083 24.2083 24.1151 24.2083 24C24.2083 23.8849 24.115 23.7917 23.9999 23.7917ZM22.5416 24C22.5416 23.1946 23.1945 22.5417 23.9999 22.5417C24.8053 22.5417 25.4583 23.1946 25.4583 24C25.4583 24.8054 24.8053 25.4583 23.9999 25.4583C23.1945 25.4583 22.5416 24.8054 22.5416 24ZM29.8333 23.7917C29.7182 23.7917 29.6249 23.8849 29.6249 24C29.6249 24.1151 29.7182 24.2083 29.8333 24.2083C29.9483 24.2083 30.0416 24.1151 30.0416 24C30.0416 23.8849 29.9483 23.7917 29.8333 23.7917ZM28.3749 24C28.3749 23.1946 29.0278 22.5417 29.8333 22.5417C30.6387 22.5417 31.2916 23.1946 31.2916 24C31.2916 24.8054 30.6387 25.4583 29.8333 25.4583C29.0278 25.4583 28.3749 24.8054 28.3749 24Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_2069_2036"
+          x="-40"
+          y="-40"
+          width="128"
+          height="128"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_2069_2036"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_2069_2036"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+};
+
+export const ArrowRightSmall: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="6"
+      height="10"
+      viewBox="0 0 6 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0.313195 0.646447C0.508457 0.451184 0.825039 0.451184 1.0203 0.646447L5.0203 4.64645C5.21556 4.84171 5.21556 5.15829 5.0203 5.35355L1.0203 9.35355C0.825039 9.54882 0.508457 9.54882 0.313195 9.35355C0.117933 9.15829 0.117933 8.84171 0.313195 8.64645L3.95964 5L0.313195 1.35355C0.117933 1.15829 0.117933 0.841709 0.313195 0.646447Z"
+        fill="#120713"
+      />
+    </svg>
+  );
+};
+
+export const UncheckedState: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <rect width="16" height="16" rx="6" fill="#647084" fill-opacity="0.04" />
+      <rect
+        x="0.5"
+        y="0.5"
+        width="15"
+        height="15"
+        rx="5.5"
+        stroke="#647084"
+        stroke-opacity="0.08"
+      />
+    </svg>
+  );
+};
+
+export const CheckedState: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <rect width="16" height="16" rx="6" fill="#C655CE" />
+      <path
+        d="M10.6666 6L6.99992 9.66667L5.33325 8"
+        stroke="white"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const RadioChecked: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.5"
+        y="0.5"
+        width="15"
+        height="15"
+        rx="7.5"
+        fill="#647084"
+        fill-opacity="0.04"
+      />
+      <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#C655CE" />
+      <circle cx="8" cy="8" r="4" fill="#C655CE" />
+    </svg>
+  );
+};
+
+export const RadioUnchecked: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="16" height="16" rx="8" fill="#647084" fill-opacity="0.04" />
+      <rect
+        x="0.5"
+        y="0.5"
+        width="15"
+        height="15"
+        rx="7.5"
+        stroke="#647084"
+        stroke-opacity="0.08"
+      />
+    </svg>
+  );
+};
+
+export const RoundedCrossNew: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="32" height="32" rx="12" fill="#647084" fill-opacity="0.04" />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M20.3535 12.3535C20.5488 12.1583 20.5488 11.8417 20.3535 11.6464C20.1582 11.4512 19.8417 11.4512 19.6464 11.6464L16 15.2929L12.3535 11.6464C12.1583 11.4512 11.8417 11.4512 11.6464 11.6464C11.4512 11.8417 11.4512 12.1583 11.6464 12.3535L15.2929 16L11.6464 19.6464C11.4512 19.8417 11.4512 20.1582 11.6464 20.3535C11.8417 20.5488 12.1583 20.5488 12.3535 20.3535L16 16.7071L19.6464 20.3535C19.8417 20.5488 20.1582 20.5488 20.3535 20.3535C20.5488 20.1582 20.5488 19.8417 20.3535 19.6464L16.7071 16L20.3535 12.3535Z"
+        fill="#120713"
+      />
+    </svg>
+  );
+};
+
+export const RoundedPlusNew: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="24" rx="12" fill="#647084" fill-opacity="0.04" />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M12.4999 7.33325C12.4999 7.05711 12.2761 6.83325 11.9999 6.83325C11.7238 6.83325 11.4999 7.05711 11.4999 7.33325V11.4999H7.33325C7.05711 11.4999 6.83325 11.7238 6.83325 11.9999C6.83325 12.2761 7.05711 12.4999 7.33325 12.4999H11.4999V16.6666C11.4999 16.9427 11.7238 17.1666 11.9999 17.1666C12.2761 17.1666 12.4999 16.9427 12.4999 16.6666V12.4999H16.6666C16.9427 12.4999 17.1666 12.2761 17.1666 11.9999C17.1666 11.7238 16.9427 11.4999 16.6666 11.4999H12.4999V7.33325Z"
+        fill="#120713"
+      />
+    </svg>
+  );
+};

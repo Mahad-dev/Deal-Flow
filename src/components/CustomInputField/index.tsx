@@ -38,7 +38,7 @@ const CustomInputField: React.FC<CustomInputProps> = ({
           <input
             className=" appearance-none border w-full py-[13px] pl-[54px] pr-[18px] text-gray-700 leading-tight 
              focus:shadow-outline border-dark-4 focus:outline-none focus:bg-white focus:border-dark rounded-[18px]
-             hover:border-dark"
+             hover:border-dark bg-[#6470840A]"
             type={type}
             placeholder={placeholder}
             value={inputValue}
@@ -57,7 +57,7 @@ const CustomInputField: React.FC<CustomInputProps> = ({
           <input
             className=" appearance-none border w-full  py-[13px]  px-[18px] text-gray-700 leading-tight 
              focus:shadow-outline border-[transparent] focus:outline-none focus:bg-white focus:border-dark rounded-[18px]
-             hover:border-dark"
+             hover:border-dark bg-[#6470840A]"
             type={type}
             placeholder={placeholder}
             value={inputValue}
