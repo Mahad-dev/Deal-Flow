@@ -15,7 +15,7 @@ export default function InvoiceForm({
     setDarkColor(darkerColor);
   }, [selectedColor]);
   return (
-    <div className="bg-[#fff] px-[2rem] py-[1rem] rounded-[20px] shadow-sm">
+    <div className="bg-[#fff] px-[1.5rem] py-[1rem] rounded-[20px] shadow-sm">
       <div className="px-[3rem] py-[1.5rem] rounded-[20px] overflow-hidden relative">
         <section className="clip-path-before: Heading ">
           <h2 className="font-bold  text-[32px] text-right mb-4 relative">
@@ -231,7 +231,7 @@ export default function InvoiceForm({
                 </div>
                 <div
                   style={{ backgroundColor: selectedColor }}
-                  className="circle"
+                  className="circle opacity-[.5]"
                 ></div>
               </div>
             </section>
