@@ -24,6 +24,10 @@ export default function InvoiceForm({
               style={{ backgroundColor: selectedColor }}
               className="circle_rounded"
             ></div>
+             <div
+              style={{ backgroundColor: selectedColor }}
+              className="circle_rounded right_one"
+            ></div>
             <div className="absolute top-5">
               {" "}
               <img
@@ -35,7 +39,7 @@ export default function InvoiceForm({
           </h2>
         </section>
 
-        <section className="Profile ">
+        <section className="Profile">
           <div className="grid grid-cols-2 justify-between mb-4">
             <div></div>
             <div>
@@ -118,7 +122,7 @@ export default function InvoiceForm({
           </div>
         </section>
 
-        <div className="flex flex-col gap-28">
+        <div className="flex flex-col gap-[4rem]">
           <section className="Description text-[12px]">
             <div className="border-b-2 border-y-gray flex gap-6 py-1">
               <div className="w-[50%] font-bold flex justify-between">

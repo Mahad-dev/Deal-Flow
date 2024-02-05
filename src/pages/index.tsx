@@ -44,7 +44,7 @@ const ProfileDetails = () => {
               <li
                 key={item.id}
                 onClick={() => setComponentIndex(item.id)}
-                className={`text-gray text-[14px] xl:text-[17px] cursor-pointer
+                className={`text-[#c8c6ca] text-[14px] xl:text-[17px] cursor-pointer
                 font-semibold ${componentIndex === item.id && "!text-dark"}`}
               >
                 {item.label}

@@ -14,7 +14,7 @@ export default function Studio() {
   };
   return (
     <div>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 max-w-[1230px] mx-auto">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 max-w-[1230px] mx-auto mb-8">
         <ChooseYourStyles
           selectedColor={selectedColor}
           handleColorChange={handleColorChange}
