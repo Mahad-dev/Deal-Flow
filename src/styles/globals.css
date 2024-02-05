@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* body {
   color: rgb(var(--foreground-rgb));
 } */
-
 
 .rectSelectWrapper .css-13cymwt-control,
 .rectSelectWrapper .css-t3ipsp-control {
@@ -18,19 +16,17 @@
   appearance: none;
   min-height: 48px;
   border-radius: 18px;
-  background-color: #6470840A;
-  box-shadow:  0 0 0 1px transparent;
+  background-color: #6470840a;
+  box-shadow: 0 0 0 1px transparent;
 }
 .rectSelectWrapper .css-qbdosj-Input,
 .rectSelectWrapper .css-1dimb5e-singleValue {
   color: #8e97a6;
- 
 }
 .rectSelectWrapper .css-13cymwt-control:hover,
 .rectSelectWrapper .css-t3ipsp-control:hover,
 .rectSelectWrapper .css-t3ipsp-control:focus {
   border: 1px solid #001b44;
-
 }
 
 .rectSelectWrapper .css-1u9des2-indicatorSeparator {
@@ -40,40 +36,43 @@
   display: none;
 }
 
-
-.gradientBg{
-  background: linear-gradient(90deg, rgba(198,85,206,1) 60%, rgba(254,225,226,1) 120%);
+.gradientBg {
+  background: linear-gradient(
+    90deg,
+    rgba(198, 85, 206, 1) 60%,
+    rgba(254, 225, 226, 1) 120%
+  );
 }
-.beforeLine::before{
+.beforeLine::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 50%;
   height: 4px;
-  background-color: #C655CE;
+  background-color: #c655ce;
 }
 
 .slider-picker {
   width: 100%;
 }
-.circle_rounded{
+.circle_rounded {
   width: 150px;
   height: 150px;
   border-radius: 9999px;
   position: absolute;
   top: -80px;
   left: -80px;
-  background-color: #D173D2;
+  background-color: #d173d2;
 }
-.circle{
+.circle {
   width: 150px;
   height: 150px;
   border-radius: 9999px;
   position: absolute;
   top: 126px;
   left: -82px;
-  background-color: #D173D2;
+  background-color: #d173d2;
 }
 .clip-path-before::after {
   position: absolute;
@@ -81,7 +80,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-
 }
 .clip-path-before::before {
   position: absolute;
@@ -89,4 +87,29 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.hue-picker {
+  width: 100% !important;
+}
+.hue-horizontal {
+  border-radius: 12px !important;
+}
+
+.carousel_image {
+  width: 50%;
+}
+
+.group .inline-flex {
+  background-color: #6b7280;
+}
+
+.group .inline-flex:hover {
+  background-color: #6d778c !important;
+}
+
+.right_one {
+  left: 100% !important;
+  top: 476px !important;
+  opacity: .3;
 }

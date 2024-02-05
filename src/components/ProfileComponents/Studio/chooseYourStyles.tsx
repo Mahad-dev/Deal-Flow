@@ -3,6 +3,7 @@ import Image from "next/image";
 import { AddPlus } from "../../ui-icons";
 import ColorPicker from "@/components/common/colorpicker";
 import Switch from "../../common/switch";
+import CarouselComponent from "./Carousel";
 interface AddImageProps {
   selectedImages: string[];
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
@@ -36,7 +37,7 @@ export default function ChooseYourStyles({
 
   return (
     <div className="bg-[#fff] p-[1.5rem] rounded-[20px] shadow-sm">
-      <h2 className="font-bold text-[21px] text-[#120713] mb-4">
+      <h2 className="font-bold text-[21px] text-[#120713] mb-10">
         Choose your style
       </h2>
 
@@ -90,6 +91,10 @@ export default function ChooseYourStyles({
           </span>
           <Switch />
         </div>
+      </div>
+
+      <div className="mt-10">
+        <CarouselComponent/>
       </div>
     </div>
   );
