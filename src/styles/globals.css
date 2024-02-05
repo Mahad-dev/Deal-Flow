@@ -49,6 +49,40 @@ body {
   display: none;
 }
 
+
 .slider-picker {
   width: 100%;
+}
+.circle_rounded{
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  background-color: #D173D2;
+}
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  position: absolute;
+  top: 126px;
+  left: -82px;
+  background-color: #D173D2;
+}
+.clip-path-before::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+.clip-path-before::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
