@@ -1,17 +1,22 @@
 import { useState } from "react";
 
-export default function Invoice() {
+export default function InvoiceForm({
+  selectedColor,
+}: {
+  selectedColor: string;
+}) {
   const [DarkColor, setDarkColor] = useState("#54235a");
-  const [lightColor, setLightColor] = useState("#D173D2");
 
   return (
     <div className="bg-[#fff] px-[2rem] py-[1rem] rounded-[20px] shadow-sm">
-      <div className="px-[3rem] py-[1.5rem] rounded-[20px] overflow-hidden relative" >
-      
+      <div className="px-[3rem] py-[1.5rem] rounded-[20px] overflow-hidden relative">
         <section className="clip-path-before: Heading ">
           <h2 className="font-bold  text-[32px] text-right mb-4 relative">
             Invoice
-            <div className="circle_rounded"></div>
+            <div
+              style={{ backgroundColor: selectedColor }}
+              className="circle_rounded"
+            ></div>
             <div className="absolute top-5">
               {" "}
               <img
@@ -19,11 +24,11 @@ export default function Invoice() {
                 className="w-[4rem] h-[4rem]"
                 alt=""
               />{" "}
-               </div>
+            </div>
           </h2>
         </section>
-       
-        <section className="Profile " >
+
+        <section className="Profile ">
           <div className="grid grid-cols-2 justify-between mb-4">
             <div></div>
             <div>
@@ -105,7 +110,7 @@ export default function Invoice() {
             </p>
           </div>
         </section>
-        
+
         <div className="flex flex-col gap-28">
           <section className="Description text-[12px]">
             <div className="border-b-2 border-y-gray flex gap-6 py-1">
@@ -184,59 +189,70 @@ export default function Invoice() {
               </div>
             </div>
           </section>
-    <div className="overflow-hidde">
-          <section className="Paymentinstrucions clip-path-after:">
-            <div
-              style={{ color: DarkColor }}
-              className="font-bold text-[15px] pb-4"
-            >
-              Payment Instructions (Pay Online{" "}
-              <span style={{ color: lightColor }} className="underline">
-                here
-              </span>{" "}
-              )
-            </div>
-            <div className="pb-4  border-b-2 border-y-gray relative">
-              <div className="flex text-[12px] font-medium justify-between text-[#000]">
-                <div>Bank</div>
-                <div>Revolut Bank UAB</div>
+          <div className="overflow-hidde">
+            <section className="Paymentinstrucions clip-path-after:">
+              <div
+                style={{ color: DarkColor }}
+                className="font-bold text-[15px] pb-4"
+              >
+                Payment Instructions (Pay Online{" "}
+                <span style={{ color: selectedColor }} className="underline">
+                  here
+                </span>{" "}
+                )
               </div>
-              <div className="flex text-[12px] font-medium justify-between text-[#000]">
-                <div>Bank Address:</div>
-                <div>Konstitcijos ave 21B, 08130 vinius, Lithuania</div>
+              <div className="pb-4  border-b-2 border-y-gray relative">
+                <div className="flex text-[12px] font-medium justify-between text-[#000]">
+                  <div>Bank</div>
+                  <div>Revolut Bank UAB</div>
+                </div>
+                <div className="flex text-[12px] font-medium justify-between text-[#000]">
+                  <div>Bank Address:</div>
+                  <div>Konstitcijos ave 21B, 08130 vinius, Lithuania</div>
+                </div>
+                <div className="flex text-[12px] font-medium justify-between text-[#000]">
+                  <div>Account name</div>
+                  <div>Account name : Dealflow ApS</div>
+                </div>
+                <div className="flex text-[12px] font-medium justify-between text-[#000]">
+                  <div>IBAN</div>
+                  <div>LT 24 3250 0494 6632 2270</div>
+                </div>
+                <div className="flex text-[12px] font-medium justify-between text-[#000]">
+                  <div>BEC</div>
+                  <div>REVOLT21</div>
+                </div>
+                <div
+                  style={{ backgroundColor: selectedColor }}
+                  className="circle"
+                ></div>
               </div>
-              <div className="flex text-[12px] font-medium justify-between text-[#000]">
-                <div>Account name</div>
-                <div>Account name : Dealflow ApS</div>
-              </div>
-              <div className="flex text-[12px] font-medium justify-between text-[#000]">
-                <div>IBAN</div>
-                <div>LT 24 3250 0494 6632 2270</div>
-              </div>
-              <div className="flex text-[12px] font-medium justify-between text-[#000]">
-                <div>BEC</div>
-                <div>REVOLT21</div>
-              </div>
-              <div className="circle"></div>
-
-            </div>
-          </section>
+            </section>
           </div>
         </div>
         <section>
-        <div className="flex justify-between">
-          <div className="text-[8px] text-[#000] w-[70%] flex flex-col gap-3 py-2">
+          <div className="flex justify-between">
+            <div className="text-[8px] text-[#000] w-[70%] flex flex-col gap-3 py-2">
+              <p className="relative z-20">
+                This Invoice is owned by Dealflow ApS (cvr : 42666238). The
+                payment should be made to the account as listed above, with the
+                correct reffence. Any question regarding the contents of this
+                invoice should be directed to JP consult ApS.
+              </p>
+              <p>Page 1 of 1</p>
+            </div>
 
-            <p>This Invoice is owned by Dealflow ApS (cvr : 42666238). The payment should be made to the account as listed above, with the correct reffence. Any question regarding the contents of this invoice should be directed to JP consult ApS.</p>
-            <p>Page 1 of 1</p>
+            <div className="text-[#000] leading-4 flex justify-center items-center w-[30%]">
+              <span
+                style={{ color: selectedColor }}
+                className="font-bold text-[10px]"
+              >
+                Invoicing powered by{" "}
+                <div className="text-[15px] flex justify-end">Dealflow</div>
+              </span>
+            </div>
           </div>
-
-          <div className="text-[#000] leading-4 flex justify-center items-center w-[30%]" >
-            <span style={{color:lightColor}} className="font-bold text-[10px]">Invoicing powered by <div className="text-[15px] flex justify-end">Dealflow</div></span>
-            
-          </div>
-          </div>
-          </section>
+        </section>
       </div>
     </div>
   );
