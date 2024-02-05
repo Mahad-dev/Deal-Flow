@@ -18,9 +18,25 @@ const config: Config = {
       light: "#F5F6F8",
       gray: "#c8c6ca",
       dark: "#120713",
-      // Configure your color palette here
-    }
+      white: "#ffffff",
+      gareen: "#09997F",
+      warning: "#F57940",
+    },
+    keyframes: {
+      "accordion-down": {
+        from: { height: "0" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      "accordion-up": {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0" },
+      },
+    },
+    animation: {
+      "accordion-down": "accordion-down 0.2s ease-out",
+      "accordion-up": "accordion-up 0.2s ease-out",
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

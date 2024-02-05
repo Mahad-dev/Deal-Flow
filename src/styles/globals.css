@@ -31,15 +31,19 @@ body {
   appearance: none;
   min-height: 48px;
   border-radius: 18px;
+  background-color: #6470840A;
+  box-shadow:  0 0 0 1px transparent;
 }
 .rectSelectWrapper .css-qbdosj-Input,
 .rectSelectWrapper .css-1dimb5e-singleValue {
   color: #8e97a6;
+ 
 }
 .rectSelectWrapper .css-13cymwt-control:hover,
 .rectSelectWrapper .css-t3ipsp-control:hover,
 .rectSelectWrapper .css-t3ipsp-control:focus {
   border: 1px solid #001b44;
+
 }
 
 .rectSelectWrapper .css-1u9des2-indicatorSeparator {
@@ -47,4 +51,17 @@ body {
 }
 .filterWrapper .css-13cymwt-control {
   display: none;
+}
+
+.gradientBg{
+  background: linear-gradient(90deg, rgba(198,85,206,1) 60%, rgba(254,225,226,1) 120%);
+}
+.beforeLine::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background-color: #C655CE;
 }
