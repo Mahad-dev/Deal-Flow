@@ -6,6 +6,7 @@ import {
   RoundedPlusNew,
   ArrowRightSmall,
   RoundedInfo,
+  RepeatTransection,
 } from "../ui-icons";
 import Image from "next/image";
 import ReusableModal from "../Modal";
@@ -218,7 +219,9 @@ const WithdrawMoney = () => {
                   Convert
                 </span>
                 <span>€ 1 470</span>
-                <span></span>
+                <span>
+                  <RepeatTransection />
+                </span>
               </div>
             </div>
 
@@ -348,7 +351,7 @@ const WithdrawMoney = () => {
               className=" p-[16px] text-white text-[13px] font-medium cursor-pointer  w-[48%]
             flex items-center justify-center rounded-[100px] gradientBg leading-[18px]"
             >
-              Confirm
+              Next
             </div>
           </div>
         </>
@@ -412,7 +415,7 @@ const WithdrawMoney = () => {
                   className="p-[16px] text-white text-[13px] font-medium cursor-pointer 
                     flex items-center justify-center rounded-[100px] gradientBg leading-[18px]"
                 >
-                  Confirm
+                  Confirm Account
                 </div>
               </div>
             </div>

@@ -7,6 +7,22 @@
   color: rgb(var(--foreground-rgb));
 } */
 
+::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.6em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c655ce;
+  border: 0.1em solid #fff;
+  border-radius: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #c655ce #ffffff;
+  scrollbar-width: thin;
+}
 
 .rectSelectWrapper .css-13cymwt-control,
 .rectSelectWrapper .css-t3ipsp-control {
