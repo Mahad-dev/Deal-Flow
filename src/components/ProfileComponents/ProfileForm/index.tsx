@@ -46,7 +46,7 @@ const CompanyDetailsForm = () => {
   return (
     <>
       <div className=" flex items-center justify-between flex-wrap gap-[12px] xl:gap-[18px] px-[16px] xl:px-[30px] 2xl:gap-[20px]
-       pt-0 mt-[8px] xl:mt-[16px] rounded-[20px] overflow-hidden ">
+       pt-0 mt-[8px] xl:mt-[16px] rounded-[20px] ">
         <CustomInputField
           type="text"
           placeholder="Company name"

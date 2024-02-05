@@ -44,7 +44,7 @@ const ProfileDetails = () => {
           <div className="flex flex-col xl:flex-row  xl:justify-between gap-[20px]">
             <div
               className="xl:w-[49%] shadow-[rgba(0,0,0,0.1)_0px_10px_50px] rounded-[20px]
-               overflow-hidden bg-white"
+                bg-white"
             >
               <div className="p-[16px_16px_8px_16px]  xl:p-[32px_32px_16px_32px] flex items-center justify-between">
                 <h2 className="text-[18px] xl:text-[21px]  font-bold text-dark">
