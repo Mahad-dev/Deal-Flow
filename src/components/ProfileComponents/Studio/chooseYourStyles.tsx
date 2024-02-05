@@ -1,8 +1,8 @@
 import { useState, ChangeEvent } from "react";
 import Image from "next/image";
-import { AddPlus } from "../ui-icons";
+import { AddPlus } from "../../ui-icons";
 import ColorPicker from "@/components/common/colorpicker";
-import Switch from "../common/switch";
+import Switch from "../../common/switch";
 interface AddImageProps {
   selectedImages: string[];
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
