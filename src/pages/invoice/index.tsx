@@ -7,6 +7,7 @@ import {
   RoundedRightArrow,
   UncheckedState,
   CheckedState,
+  RoundedCrossNew,
 } from "@/components/ui-icons";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -109,14 +110,6 @@ const selectInvoicesRecord = [
     totalCash: "+ 35,257.66 €",
     paymentStatus: "Paid",
   },
-  {
-    id: "8",
-    title: "Invoice 01",
-    company: "Company",
-
-    totalCash: "+ 35,257.66 €",
-    paymentStatus: "Paid",
-  },
 ];
 
 interface InvoiceItem {
@@ -154,7 +147,22 @@ const Invoice = () => {
         <h1 className="text-[24px] xl:text-[27px] leading-[150%] font-bold mb-0">
           Home
         </h1>
-        <span>icon</span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.125 23.1667C17.125 19.8299 19.8299 17.125 23.1667 17.125C26.5034 17.125 29.2083 19.8299 29.2083 23.1667C29.2083 24.8004 28.5599 26.2827 27.5063 27.3702C27.4807 27.3889 27.4561 27.4099 27.433 27.4331C27.4098 27.4562 27.3889 27.4807 27.3701 27.5064C26.2826 28.5599 24.8004 29.2083 23.1667 29.2083C19.8299 29.2083 17.125 26.5034 17.125 23.1667ZM27.8618 28.7458C26.5933 29.8144 24.9552 30.4583 23.1667 30.4583C19.1396 30.4583 15.875 27.1937 15.875 23.1667C15.875 19.1396 19.1396 15.875 23.1667 15.875C27.1937 15.875 30.4583 19.1396 30.4583 23.1667C30.4583 24.9552 29.8144 26.5934 28.7457 27.8619L31.9419 31.0581C32.1859 31.3021 32.1859 31.6979 31.9419 31.9419C31.6978 32.186 31.3021 32.186 31.058 31.9419L27.8618 28.7458Z"
+              fill="#120713"
+            />
+          </svg>
+        </span>
       </header>
       <main className="p-[0_40px]">
         <section>
@@ -334,7 +342,7 @@ const Invoice = () => {
                       className="cursor-pointer"
                       onClick={() => setSelectInvoice(false)}
                     >
-                      <RoundedRightArrow />
+                      <RoundedCrossNew />
                     </span>
                   </div>
                   <div className="px-[40px]">

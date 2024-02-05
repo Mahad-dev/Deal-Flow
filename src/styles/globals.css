@@ -6,6 +6,23 @@
   color: rgb(var(--foreground-rgb));
 } */
 
+::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.6em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c655ce;
+  border: 0.1em solid #fff;
+  border-radius: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #c655ce #ffffff;
+  scrollbar-width: thin;
+}
+
 .rectSelectWrapper .css-13cymwt-control,
 .rectSelectWrapper .css-t3ipsp-control {
   padding: 4px 14px;
@@ -48,7 +65,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
+  width: 49%;
   height: 4px;
   background-color: #c655ce;
 }
@@ -111,5 +128,15 @@
 .right_one {
   left: 100% !important;
   top: 476px !important;
-  opacity: .3;
+  opacity: 0.3;
+}
+
+.afterLine::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 49%;
+  height: 4px;
+  background-color: #c655ce;
 }
