@@ -2,6 +2,7 @@ import { useState, ChangeEvent } from "react";
 import Image from "next/image";
 import { AddPlus } from "../ui-icons";
 import ColorPicker from "@/components/common/colorpicker";
+import Switch from "../common/switch";
 interface AddImageProps {
   selectedImages: string[];
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
@@ -9,10 +10,20 @@ interface AddImageProps {
   selectedImg: string;
 }
 
-export default function InvoiceForm() {
+interface Props {
+  selectedColor: string;
+  handleColorChange: any;
+  selectedImg: string;
+  selectedImage: any;
+}
+
+export default function ChooseYourStyles({
+  selectedColor,
+  handleColorChange,
+  selectedImg,
+  selectedImage,
+}: Props) {
   const [selectedImages, setSelectedImages] = useState<string[]>([]);
-  const [selectedImg, setSelectedImg] = useState<string>("");
-  const [selectedColor, setSelectedColor] = useState("#fff");
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files) {
@@ -22,13 +33,7 @@ export default function InvoiceForm() {
       setSelectedImages((prevImages) => [...prevImages, ...newImages]);
     }
   };
-  const selectedImage = (img: string) => {
-    setSelectedImg(img);
-  };
-  const handleColorChange = (color: any) => {
-    console.log(color);
-    setSelectedColor(color.hex);
-  };
+
   return (
     <div className="bg-[#fff] p-[1.5rem] rounded-[20px] shadow-sm">
       <h2 className="font-bold text-[21px] text-[#120713] mb-4">
@@ -72,12 +77,20 @@ export default function InvoiceForm() {
           />
         </div>
       </div>
-        <div className="rounded-[20px] mt-4 w-full min-[180px] py-6 px-5 bg-[#6470840A] flex items-center gap-2 max-w-full overflow-auto">
+      <div className="rounded-[20px] mt-4 w-full min-[180px] py-5 bg-[#6470840A] flex flex-col max-w-full overflow-auto">
+        <div className="flex px-5 items-center justify-between pb-4 border-b border-b-[#fff]">
           <span className="text-[#120713] font-medium text-[13px]">
-          Display personal name
+            Display personal name
           </span>
-          <span>a</span>
+          <Switch />
         </div>
+        <div className="flex px-5 items-center justify-between pt-4">
+          <span className="text-[#120713] font-medium text-[13px]">
+            Display personal name
+          </span>
+          <Switch />
+        </div>
+      </div>
     </div>
   );
 }
