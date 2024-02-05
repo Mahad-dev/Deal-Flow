@@ -1,7 +1,7 @@
 import { useState, ChangeEvent } from "react";
 import Image from "next/image";
 import { AddPlus } from "../ui-icons";
-
+import ColorPicker from "@/components/common/colorpicker";
 interface AddImageProps {
   selectedImages: string[];
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
@@ -12,7 +12,7 @@ interface AddImageProps {
 export default function InvoiceForm() {
   const [selectedImages, setSelectedImages] = useState<string[]>([]);
   const [selectedImg, setSelectedImg] = useState<string>("");
-
+  const [selectedColor, setSelectedColor] = useState("#fff");
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files) {
@@ -24,6 +24,10 @@ export default function InvoiceForm() {
   };
   const selectedImage = (img: string) => {
     setSelectedImg(img);
+  };
+  const handleColorChange = (color: any) => {
+    console.log(color);
+    setSelectedColor(color.hex);
   };
   return (
     <div className="bg-[#fff] p-[1.5rem] rounded-[20px] shadow-sm">
@@ -45,8 +49,8 @@ export default function InvoiceForm() {
         )}
       </div>
 
-      <div className="flex items-center gap-3">
-        <div className="rounded-[20px] p-3 bg-[#6470840A] flex items-center gap-2 max-w-full overflow-auto">
+      <div className="grid grid-cols-[145px_1fr] items-center gap-3">
+        <div className="rounded-[20px] py-5 px-3 bg-[#6470840A] flex items-center gap-2 max-w-full overflow-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -54,14 +58,26 @@ export default function InvoiceForm() {
             viewBox="0 0 24 24"
             fill="none"
           >
-            <rect width="24" height="24" rx="12" fill="#C655CE" />
+            <rect width="24" height="24" rx="12" fill={selectedColor} />
           </svg>
-          <span className="text-[13px] font-medium text-[#120713]">#120713</span>
+          <span className="text-[13px] font-medium text-[#120713]">
+            {selectedColor}
+          </span>
           <span className="text-[13px] text-[#12071366]">HEX</span>
         </div>
-        <div className="rounded-[20px] p-3 bg-[#6470840A] flex items-center gap-2 max-w-full overflow-auto">3</div>
-
+        <div className="rounded-[20px] min-[180px] py-6 px-5 bg-[#6470840A] flex items-center gap-2 max-w-full overflow-auto">
+          <ColorPicker
+            color={selectedColor}
+            onChangeComplete={handleColorChange}
+          />
+        </div>
       </div>
+        <div className="rounded-[20px] mt-4 w-full min-[180px] py-6 px-5 bg-[#6470840A] flex items-center gap-2 max-w-full overflow-auto">
+          <span className="text-[#120713] font-medium text-[13px]">
+          Display personal name
+          </span>
+          <span>a</span>
+        </div>
     </div>
   );
 }

@@ -48,3 +48,7 @@ body {
 .filterWrapper .css-13cymwt-control {
   display: none;
 }
+
+.slider-picker {
+  width: 100%;
+}
