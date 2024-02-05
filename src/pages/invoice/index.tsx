@@ -109,14 +109,7 @@ const selectInvoicesRecord = [
     totalCash: "+ 35,257.66 €",
     paymentStatus: "Paid",
   },
-  {
-    id: "8",
-    title: "Invoice 01",
-    company: "Company",
-
-    totalCash: "+ 35,257.66 €",
-    paymentStatus: "Paid",
-  },
+ 
 ];
 
 interface InvoiceItem {

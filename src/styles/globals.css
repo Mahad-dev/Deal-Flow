@@ -62,7 +62,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
+  width: 49%;
   height: 4px;
   background-color: #C655CE;
 }
@@ -102,4 +102,13 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+}
+.afterLine::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 49%;
+  height: 4px;
+  background-color: #C655CE;
 }
